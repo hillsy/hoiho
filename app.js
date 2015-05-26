@@ -1,10 +1,10 @@
 'use strict';
 
-var app = angular.module('myapp', ["highcharts-ng", "mongolabResourceHttp"]);
+var app = angular.module('app', ["highcharts-ng", "mongolabResourceHttp"]);
 // TODO: API_KEY configurable
 app.constant('MONGOLAB_CONFIG', {API_KEY: 'lVeswGfmZbph39-u2GjhnSj0yMYJXufz', DB_NAME: 'hoiho'});
 
-myapp.controller('mapctl', function ($scope) {
+app.controller('mapctl', function ($scope) {
 
   $scope.chartTypes = [
     {"id": "line", "title": "Line"},
